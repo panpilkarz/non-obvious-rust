@@ -7,7 +7,9 @@ Random things I found non-obvious (as a C and Python dev) while learning Rust
 * unlike C and C++, Rust treats characters as distinct from the numerical types
 * there are 128-bit integeres: `u128`, `i128`
 
-# Strings
+# Variables
+
+* Rust’s char type is four bytes in size
 
 # Memory management
 
@@ -19,6 +21,14 @@ Random things I found non-obvious (as a C and Python dev) while learning Rust
 * unlike in C++, Rust reference can change where it points to
 * comparing refs is comparing values; to compare addresses use `std::ptr::eq`
 * references can't be null; use `Option<&T>` if want to express "nullable"
+* if a type implements the `Copy` trait, variables that use it do not move, but rather are trivially copied, making them still valid after assignment to another variable.
+* the mechanics of passing a value to a function are similar to those when assigning a value to a variable
+* if you have a mutable reference to a value, you can have no other references to that value...
+* ... we also cannot have a mutable reference while we have an immutable one to the same value.
+
+# Strings
+* `String` is string type. `str` is string slice.
+* having a function that takes reference to slice `fn f(s: &str)` rather than to string, will work for both strings ans slices.
 
 # Rules of thumb
 
