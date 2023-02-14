@@ -31,6 +31,7 @@ Random things I found non-obvious (as a C and Python dev) while learning Rust
 * there is convention to name struct constructors "new"
 * pattern matching requires to match all possible values. add "_" and panic() for impossible cases
 * match guard is an extra condition for match
+* variable names can be shadowed (ie. some variable holding int can hold String next)
 
 # Error handling
 
