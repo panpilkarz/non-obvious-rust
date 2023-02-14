@@ -41,6 +41,11 @@ Random things I found non-obvious (as a C and Python dev) while learning Rust
 * match guard is an extra condition for match
 * variable names can be shadowed (ie. some variable holding int can hold String next)
 
+# Enums
+* `Option` is standard library enum with `None` and `Some`
+* enums, similar to structs, can have methods and associated functions implemented
+* 
+
 # Error handling
 
 * Rust doesn't have exceptions
