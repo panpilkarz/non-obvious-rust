@@ -17,7 +17,7 @@ Random things I found non-obvious (as a C and Python dev) while learning Rust
 * tuple that holds only Copy-types, is Copy-type
 * if struct holds only Copy-types, you can make it Copy-type by declaring `#[derive(Copy, Clone)]`
 * `Rc` (reference count) type, unlike `Arc` (atomic reference count), is not safe to share between threads, becasue it used fast non-thread-safe code to update its reference count. Otherwise the two types are equilavent.
-* use `Rc` to act kind of like Python
+* use `Rc` to act kind of like Python does
 * unlike in C++, Rust reference can change where it points to
 * comparing refs is comparing values; to compare addresses use `std::ptr::eq`
 * references can't be null; use `Option<&T>` if want to express "nullable"
@@ -55,5 +55,5 @@ Random things I found non-obvious (as a C and Python dev) while learning Rust
 
 * Rust compiles crates into .rlib files
 * you should specify edition yhou code is using. 2015 is default
-* use std::fs::{self, File} imports both std::fs and std::fs::File
+* `use std::fs::{self, File}` imports `both std::fs` and `std::fs::File`
 
