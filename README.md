@@ -9,8 +9,6 @@ Random things I found non-obvious (as a C and Python dev) while learning Rust
 
 # Strings
 
-* there are `.green()`, `.green().bold()` etc. string methods that will make terminal output colorified
-
 # Memory management
 
 * moves make source uninitialised
